@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Reports from "./pages/reports/Reports";
 import Movements from "./pages/movements/Movements"
+import SingleProduct from "./pages/products/SingleProduct";
 
 
 
@@ -46,6 +47,10 @@ function App() {
         {
           path:"/products",
           element: <Products/>
+        },
+        {
+          path:"/product/:id",
+          element: <SingleProduct/>
         },
         {
           path:"/reports",
