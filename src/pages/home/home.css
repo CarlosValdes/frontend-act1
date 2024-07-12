@@ -1,9 +1,30 @@
 .home{
-    background:inherit;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(180px,auto);
 }
 
 .home .box{
     padding: 20px;
     border-radius: 10px;
     border: 1px solid var(--soft-bg);
+    background: rgba(173, 216, 230, 0.271);
+}
+
+.home .bc1{
+    grid-column: span 1;
+    grid-row: span 3;
+
+}
+.home .bc4{
+    grid-column: span 1;
+    grid-row: span 3;
+
+}
+
+.home .bc5{
+    grid-column: span 2;
+    grid-row: span 2;
+
 }

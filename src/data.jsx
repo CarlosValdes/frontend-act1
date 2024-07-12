@@ -29,9 +29,9 @@ export const menu=[
             },
             {
                 id:3,
-                title:"Consulta Movimientos",
+                title:"Reportes",
                 url:"/productsmove",
-                icon:"./movimientos.png"
+                icon:"./reports.png"
             },
         ]
     },
