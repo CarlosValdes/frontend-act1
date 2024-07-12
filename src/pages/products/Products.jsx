@@ -6,7 +6,7 @@ import Datatable from '../../components/datatable/Datatable.jsx';
 import { DataGrid,GridColDef, GridToolbar } from '@mui/x-data-grid';
 
 
-
+const pr=products.sort((a,b)=>a.id-b.id);
 const columns = [
   { field: 'id', headerName: 'ID', width: 90 },
   {
@@ -61,7 +61,7 @@ function Products() {
         <h1>Productos</h1>
         <button>Agregar Producto</button>
        </div>
-       <Datatable columns={columns} rows={products}/>
+       <Datatable columns={columns} rows={pr}/>
     </div>
   )
 }
