@@ -1,9 +1,9 @@
 import React from 'react'
 import "./products.css"
 import {products} from "../../data.jsx"
-import Listadodeproductos from '../../components/Listadodeproductos.jsx';
+
 import Datatable from '../../components/datatable/Datatable.jsx';
-import { DataGrid,GridColDef, GridToolbar } from '@mui/x-data-grid';
+
 
 
 const pr=products.sort((a,b)=>a.id-b.id);
@@ -53,7 +53,7 @@ const columns = [
 
 
 
-const datos= products;
+
 function Products() {
   return (
     <div className='products' >
@@ -61,7 +61,7 @@ function Products() {
         <h1>Productos</h1>
         <button>Agregar Producto</button>
        </div>
-       <Datatable columns={columns} rows={pr}/>
+       <Datatable slug="products"  columns={columns} rows={pr}/>
     </div>
   )
 }
