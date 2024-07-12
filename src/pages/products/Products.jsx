@@ -41,7 +41,7 @@ const columns = [
     field: 'qty',
     headerName: 'EXISTENCIA',
     type: 'number',
-    width: 70,
+    width: 100,
     editable: false,
   },
   
