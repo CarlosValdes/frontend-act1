@@ -25,13 +25,13 @@ export const menu=[
             {
                 id:2,
                 title:"Consulta Movimientos",
-                url:"/productsmove",
+                url:"/movements",
                 icon:"./movimientos.png"
             },
             {
                 id:3,
                 title:"Reportes",
-                url:"/productsmove",
+                url:"/reports",
                 icon:"./reports.png"
             },
         ]

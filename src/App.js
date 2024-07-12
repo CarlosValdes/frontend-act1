@@ -10,6 +10,8 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import Reports from "./pages/reports/Reports";
+import Movements from "./pages/movements/Movements"
 
 
 
@@ -46,9 +48,17 @@ function App() {
           element: <Products/>
         },
         {
+          path:"/reports",
+          element: <Reports/>
+        },
+        {
+          path:"/movements",
+          element: <Movements/>
+        },
+        {
           path:"*",
           element: <Home/>
-        }
+        },
   ]
   
     },
