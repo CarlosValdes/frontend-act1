@@ -14,12 +14,22 @@
 
 .home .bc1{
     grid-column: span 1;
-    grid-row: span 3;
+    grid-row: span 4;
+
+}
+.home .bc2{
+    grid-column: span 1;
+    grid-row: span 2;
+
+}
+.home .bc3{
+    grid-column: span 1;
+    grid-row: span 2;
 
 }
 .home .bc4{
     grid-column: span 1;
-    grid-row: span 3;
+    grid-row: span 4;
 
 }
 
