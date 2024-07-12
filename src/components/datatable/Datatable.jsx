@@ -23,7 +23,7 @@ function Datatable(props) {
         renderCell:(params)=>{
             return(
                 <div className="action">
-                    <Link to={`/${props.slug}/${params.row.id}`}>
+                    <Link to={`/${props.slug}/${params.row.id}`} className='enlace'>
                     <img src="./images/open.svg" alt="" />
                     </Link>
                     <div className="delete" onClick={()=>borrar(params.row.id)}>
@@ -38,7 +38,7 @@ function Datatable(props) {
     
   return (
     <div className='datatable'>
-        <DataGrid
+        <DataGrid autoHeight
         className='grid'
         rows={props.rows}
         columns={[...props.columns,actionColumn]}
@@ -64,6 +64,8 @@ function Datatable(props) {
         disableColumnFilter
         disableDensitySelector
         disableColumnSelector
+        
+
       
         
       />

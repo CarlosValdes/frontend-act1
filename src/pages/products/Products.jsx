@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./products.css"
 import {products} from "../../data.jsx"
-
 import Datatable from '../../components/datatable/Datatable.jsx';
+import Add from '../../components/add/Add.jsx';
 
 
 
@@ -28,40 +28,37 @@ const columns = [
   {
     field: 'productname',
     headerName: 'PRODUCTO',
+    type: 'String',
     width: 200,
-    editable: false,
+    editable: "false",
   },
   {
     field: 'productdescription',
     headerName: 'INFORMACION PRODUCTO',
     width: 280,
-    editable: false,
+    type: 'String',
+    editable: "false",
   },
   {
     field: 'qty',
     headerName: 'EXISTENCIA',
     type: 'number',
     width: 100,
-    editable: false,
+    editable: "false",
   },
   
 ];
 
-
-
-
-
-
-
-
 function Products() {
+  const [open,setOpen]=useState(false);
   return (
     <div className='products' >
        <div className="info">
         <h1>Productos</h1>
-        <button>Agregar Producto</button>
+        <button onClick={()=>setOpen(true)}>Agregar Producto</button>
        </div>
-       <Datatable slug="products"  columns={columns} rows={pr}/>
+       <Datatable slug="product"  columns={columns} rows={pr}/>
+       {open && <Add slug="Producto" columns={columns} setOpen={setOpen}/>}
     </div>
   )
 }

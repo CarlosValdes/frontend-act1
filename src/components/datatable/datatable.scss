@@ -6,6 +6,7 @@
         .MuiDataGrid-toolbarContainer{
             flex-direction: row-reverse;
         }
+        
         img{
             width: 32px;
             height: 32px;
@@ -18,6 +19,17 @@
             gap: 30px;
             cursor: pointer;
             justify-content: right;
+            text-decoration: none;
+            outline: "none";
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            
+            .enlace{
+                text-decoration: none;
+            }
+            
         }
        
     }

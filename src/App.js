@@ -60,10 +60,7 @@ function App() {
           path:"/movements",
           element: <Movements/>
         },
-        {
-          path:"*",
-          element: <Home/>
-        },
+        
   ]
   
     },
