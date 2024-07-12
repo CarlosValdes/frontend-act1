@@ -1,9 +1,14 @@
 import React from 'react'
 import "./singleproduct.scss"
+import Productdetail from '../../components/productdetail/Productdetail'
 
-function SingleProduct() {
+//Obtener la informacion de un producto en base al id
+
+function SingleProduct( props) {
   return (
-    <div className='singleproduct'>SingleProduct</div>
+    <div className='singleproduct'>
+      <Productdetail/>
+    </div>
   )
 }
 

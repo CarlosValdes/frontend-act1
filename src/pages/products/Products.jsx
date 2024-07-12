@@ -15,16 +15,7 @@ const columns = [
           return <img src={params.row.img || "./images/noimage.jpg"} alt="" />
       }
   },
-  {
-      field:"actions",headerName:"Acciones",width:100,
-      renderCell:(params)=>{
-          return <div className="action">
-              <div className="view">View</div>
-              <div className="delete">Delete</div>
 
-          </div>;
-      }
-  },
   {
     field: 'productname',
     headerName: 'PRODUCTO',
