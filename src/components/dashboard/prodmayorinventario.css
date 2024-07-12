@@ -1,0 +1,47 @@
+.pmi-box{
+    h1{
+        margin-bottom:20px ;
+        text-align: center;
+    }
+    .list{
+        .listitem{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .prod{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: space-between;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                    border-radius: 50%;    
+                                    
+
+                }
+                .productinfo{
+                    display:flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .name{
+                        font-size: 14px;
+                        font-weight: 500;
+
+                    }
+                    .description{
+                        font-style: 12px;
+
+
+                    }
+                }
+            }
+        }
+        .quantity{
+            font-weight: 500;
+
+        }
+    }
+}

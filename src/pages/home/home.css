@@ -8,8 +8,8 @@
 .home .box{
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid var(--soft-bg);
-    background: rgba(173, 216, 230, 0.271);
+    border: 2px solid var(--soft-bg);
+    
 }
 
 .home .bc1{
