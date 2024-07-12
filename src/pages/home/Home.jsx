@@ -9,6 +9,9 @@ function Home() {
       <div className="box bc3">BoxContainer3</div>
       <div className="box bc4">BoxContainer4</div>
 
+
+      <div className="box bc5">la de prueba</div>
+
     </div>
   )
 }
